@@ -34,7 +34,7 @@ Test documentation, reporting, and execution were carried out using the listed Q
 - Documentation and collaboration through Confluence  
 - Version control and workflow management via Git & Azure DevOps
 
- ##🧩 API Testing (Postman)
+ ## 🧩 API Testing (Postman)
 
 This section demonstrates hands-on API testing using Postman and the public API ReqRes (https://reqres.in
 ).
