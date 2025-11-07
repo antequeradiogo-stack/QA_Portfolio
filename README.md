@@ -38,6 +38,10 @@ Test documentation, reporting, and execution were carried out using the listed Q
 - Test case management simulated in Zephyr / TestRail.
 - Documentation and collaboration through Confluence and Azure DevOps.
 - Version control using Git & GitHub for project organization.
+  
+![Tests Passed](https://img.shields.io/badge/Tests-10%20Passed-brightgreen)
+![Postman](https://img.shields.io/badge/API_Tested-Postman-orange)
+![SQL](https://img.shields.io/badge/Database-Validated-blue)
 
 ## Test Execution Summary
 
@@ -51,9 +55,11 @@ A total of 10 test cases were designed and executed covering functional, API, an
 
  ## API Testing (Postman)
 
-This section demonstrates hands-on API testing using Postman and the public API ReqRes (https://reqres.in
+This section demonstrates hands-on API testing using Postman and the public API ReqRes (https://reqres.in)
 ).
 The goal was to validate the functionality of the POST /api/users endpoint and confirm data persistence through automated scripts.
+
+| **API_Tests.postman_collection.json** | [Download Collection](./API_Tests.postman_collection.json) – API tests created and executed in Postman. |
 
 Test Objective:
 Validate that new users can be created successfully via the API and verify the correctness of the response data.
@@ -108,6 +114,9 @@ Result:
 All tests passed successfully ✅
 Response time: 217ms
 Environment: Postman Web + Cloud Agent
+
+✅ All files in this repository were created manually to simulate a real QA workflow, using realistic test design, execution, and documentation standards.
+
 
 ## Contact
 📧 diogo.antequera@email.com  
