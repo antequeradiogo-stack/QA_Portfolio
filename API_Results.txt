@@ -1,0 +1,66 @@
+──────────────────────────────────────────────
+QA PORTFOLIO – API TEST RESULTS
+──────────────────────────────────────────────
+
+Tool: Postman
+API: ReqRes (https://reqres.in)
+Type: REST API Testing
+Method: POST
+Endpoint: https://reqres.in/api/users
+
+──────────────────────────────────────────────
+Request:
+──────────────────────────────────────────────
+POST https://reqres.in/api/users
+Headers:
+Content-Type: application/json
+
+Body:
+{
+  "name": "Diogo",
+  "job": "QA Tester"
+}
+
+──────────────────────────────────────────────
+Expected Response:
+──────────────────────────────────────────────
+Status Code: 201 Created
+Response Body Example:
+{
+  "name": "Diogo",
+  "job": "QA Tester",
+  "id": "123",
+  "createdAt": "2025-11-07T12:58:43.103Z"
+}
+
+──────────────────────────────────────────────
+Validation Tests:
+──────────────────────────────────────────────
+✔ Status code is 201
+✔ Response time < 1000ms
+✔ Response body contains 'name' and 'job'
+✔ Response includes 'id' and 'createdAt' fields
+✔ JSON schema is valid
+
+──────────────────────────────────────────────
+Postman Test Script Example:
+──────────────────────────────────────────────
+pm.test("Status code is 201", function () {
+    pm.response.to.have.status(201);
+});
+
+pm.test("Response includes required fields", function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property("id");
+    pm.expect(jsonData).to.have.property("createdAt");
+    pm.expect(jsonData.name).to.eql("Diogo");
+    pm.expect(jsonData.job).to.eql("QA Tester");
+});
+
+──────────────────────────────────────────────
+Test Result:
+──────────────────────────────────────────────
+Status: PASSED ✅
+Environment: Postman Web + Cloud Agent
+Date: 07 November 2025
+──────────────────────────────────────────────
