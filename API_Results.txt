@@ -1,18 +1,40 @@
-──────────────────────────────────────────────
-QA PORTFOLIO – API TEST RESULTS
-──────────────────────────────────────────────
+# API Test Results – QA Portfolio
+# Author: Diogo Antequera
+# Date: 2025-11-07
+# Environment: Postman Web + Cloud Agent
+# Base URL: https://reqres.in/api
 
-Tool: Postman
-API: ReqRes (https://reqres.in)
-Type: REST API Testing
-Method: POST
-Endpoint: https://reqres.in/api/users
-
-──────────────────────────────────────────────
+=====================================================
+TEST CASE 1 – GET /users?page=2
+=====================================================
 Request:
-──────────────────────────────────────────────
+GET https://reqres.in/api/users?page=2
+
+Expected:
+• Status code 200
+• Response time < 1000ms
+• Response body contains “data” array
+
+Actual Result:
+• Status code: 200 OK
+• Response time: 232ms
+• Response body: JSON array of 6 users
+• Validations: PASSED ✅
+
+Assertions:
+✔ Status code is 200  
+✔ Response time below 1000ms  
+✔ Response contains users data
+
+-----------------------------------------------------
+Overall Result: ✅ PASSED
+
+
+=====================================================
+TEST CASE 2 – POST /users
+=====================================================
+Request:
 POST https://reqres.in/api/users
-Headers:
 Content-Type: application/json
 
 Body:
@@ -21,46 +43,43 @@ Body:
   "job": "QA Tester"
 }
 
-──────────────────────────────────────────────
-Expected Response:
-──────────────────────────────────────────────
-Status Code: 201 Created
-Response Body Example:
-{
-  "name": "Diogo",
-  "job": "QA Tester",
-  "id": "123",
-  "createdAt": "2025-11-07T12:58:43.103Z"
-}
+Expected:
+• Status code 201
+• Response includes “id” and “createdAt”
+• Response echoes “name” and “job”
+• Response time < 1000ms
 
-──────────────────────────────────────────────
-Validation Tests:
-──────────────────────────────────────────────
-✔ Status code is 201
+Actual Result:
+• Status code: 201 Created
+• Response time: 217ms
+• Response body:
+  {
+    "name": "Diogo",
+    "job": "QA Tester",
+    "id": "729",
+    "createdAt": "2025-11-07T15:10:45.123Z"
+  }
+• Validations: PASSED ✅
+
+Assertions:
+✔ Status code is 201  
+✔ Response includes id and createdAt  
+✔ Response body matches request data  
 ✔ Response time < 1000ms
-✔ Response body contains 'name' and 'job'
-✔ Response includes 'id' and 'createdAt' fields
-✔ JSON schema is valid
 
-──────────────────────────────────────────────
-Postman Test Script Example:
-──────────────────────────────────────────────
-pm.test("Status code is 201", function () {
-    pm.response.to.have.status(201);
-});
+-----------------------------------------------------
+Overall Result: ✅ PASSED
 
-pm.test("Response includes required fields", function () {
-    const jsonData = pm.response.json();
-    pm.expect(jsonData).to.have.property("id");
-    pm.expect(jsonData).to.have.property("createdAt");
-    pm.expect(jsonData.name).to.eql("Diogo");
-    pm.expect(jsonData.job).to.eql("QA Tester");
-});
 
-──────────────────────────────────────────────
-Test Result:
-──────────────────────────────────────────────
-Status: PASSED ✅
-Environment: Postman Web + Cloud Agent
-Date: 07 November 2025
-──────────────────────────────────────────────
+=====================================================
+SUMMARY
+=====================================================
+Total Requests Executed: 2  
+Successful: 2  
+Failed: 0  
+Success Rate: 100% ✅  
+
+Environment: ReqRes Public API  
+Validated using: Postman Web + Cloud Agent  
+Tester: Diogo Antequera  
+
