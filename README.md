@@ -4,12 +4,15 @@
 This repository showcases my practical skills as a **Quality Assurance Tester**, covering the complete QA lifecycle — from test planning and design to execution, bug reporting, and API validation.
 
 ## Project Structure
-- **Test_Plan.docx:** Detailed test plan including scope, strategy, environment, and tools  
-- **Web_Test_Cases.xlsx:** Functional and regression test cases for web application testing  
-- **Bug_Reports.pdf:** Examples of documented bugs with detailed reproduction steps and evidence  
-- **API_Tests.postman_collection.json:** API tests created and automated using Postman  
-- **SQL_Test_Queries.txt:** Sample SQL queries for data validation  
-- **README.md:** Project overview and documentation
+| File                                  | Description                                                           |
+| ------------------------------------- | --------------------------------------------------------------------- |
+| **Test_Plan.docx**                    | Detailed test plan including scope, strategy, environment, and risks. |
+| **Web_Test_Cases.xlsx**               | Functional, regression, API and database validation test cases.       |
+| **Bug_Reports.pdf**                   | Example of documented defects with reproduction steps and evidence.   |
+| **API_Tests.postman_collection.json** | API tests created and executed in Postman.                            |
+| **SQL_Test_Queries.txt**              | SQL queries for backend data validation.                              |
+| **API_Results.txt**                   | Recorded API test results including response codes and times.         |
+| **README.md**                         | Project documentation and overview.                                   |
 
 ## Tools & Technologies
 | Category | Tools |
@@ -19,20 +22,32 @@ This repository showcases my practical skills as a **Quality Assurance Tester**,
 | API Testing | Postman |
 | Version Control | Git, GitHub |
 | Documentation | Confluence |
-| Database | SQL |
-| Business Platform | Salesforce |
+| Database | SQL (MySQL test environment) |
+| Business Platform | Salesforce Sandbox |
 
 ## Project Context
 The project simulates QA testing within a **Salesforce Sandbox environment**, involving functional, regression, and API validation processes.  
 Test documentation, reporting, and execution were carried out using the listed QA tools to reflect real-world practices.
 
 ## Key Skills Demonstrated
-- Test planning, design, and execution (aligned with ISTQB standards)  
-- Bug reporting and prioritization using Jira  
-- Functional and API testing (manual and automated)  
-- Data validation using SQL  
-- Documentation and collaboration through Confluence  
-- Version control and workflow management via Git & Azure DevOps
+- End-to-end QA process – test planning, design, and execution (aligned with ISTQB standards).
+- Manual testing across functional web features and user workflows.
+- API validation using Postman collections and assertions.
+- Database validation through SQL queries to ensure data integrity.
+- Bug reporting and traceability using Jira.
+- Test case management simulated in Zephyr / TestRail.
+- Documentation and collaboration through Confluence and Azure DevOps.
+- Version control using Git & GitHub for project organization.
+
+## Test Execution Summary
+
+A total of 10 test cases were designed and executed covering functional, API, and database validation.
+| Area                | Scope                                       | Status       | Tools Used            |
+| ------------------- | ------------------------------------------- | ------------ | --------------------- |
+| Functional (UI)     | Login, Registration, Search, Cart, Checkout | ✅ All Passed | Manual testing        |
+| API Testing         | GET and POST endpoints validation           | ✅ All Passed | Postman               |
+| Database Validation | SQL queries for data persistence            | ✅ Verified   | MySQL / SQL Workbench |
+| Regression Suite    | Core flows post-deployment                  | ✅ Executed   | TestRail simulation   |
 
  ## API Testing (Postman)
 
