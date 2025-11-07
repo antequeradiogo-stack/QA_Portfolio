@@ -1,1 +1,53 @@
-SQL_Test_Queries.txt
+-- SQL Test Queries – QA Demo Salesforce Web App
+-- Author: Diogo Antequera
+
+-- ===============================================
+-- 1️⃣ Verify that new user registration is saved correctly
+-- Related Test Case: TC010
+-- Related Bug: BUG-006
+SELECT * FROM users
+WHERE email = 'newuser@example.com';
+
+-- Expected:
+-- One record returned with correct username, email, and role = 'Standard'.
+-- ===============================================
+
+
+-- 2️⃣ Validate that the total number of users increases after registration
+-- Related Test Case: TC010
+SELECT COUNT(*) AS total_users FROM users;
+
+-- Expected:
+-- User count increases by +1 after successful registration.
+-- ===============================================
+
+
+-- 3️⃣ Verify login credentials for test users
+-- Related Test Data: qa_user_01 / qa_user_02
+SELECT username, role FROM users
+WHERE username IN ('qa_user_01', 'qa_user_02');
+
+-- Expected:
+-- Both users exist in the database with correct roles (Admin, Standard).
+-- ===============================================
+
+
+-- 4️⃣ Validate order table for “shipped” status only
+-- Related Bug: BUG-006
+SELECT * FROM orders
+WHERE status = 'shipped';
+
+-- Expected:
+-- Only orders marked as “shipped” should be returned.
+-- ===============================================
+
+
+-- 5️⃣ Confirm product added to cart exists in database
+-- Related Test Case: TC006
+SELECT * FROM cart
+WHERE product_id = 101 AND user_id = 1;
+
+-- Expected:
+-- Product record appears in cart for the corresponding user.
+-- ===============================================
+
