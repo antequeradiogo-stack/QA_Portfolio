@@ -39,6 +39,7 @@ Test documentation, reporting, and execution were carried out using the listed Q
 - Documentation and collaboration through Confluence and Azure DevOps.
 - Version control using Git & GitHub for project organization.
   
+  
 ![Tests Passed](https://img.shields.io/badge/Tests-10%20Passed-brightgreen)
 ![Postman](https://img.shields.io/badge/API_Tested-Postman-orange)
 ![SQL](https://img.shields.io/badge/Database-Validated-blue)
