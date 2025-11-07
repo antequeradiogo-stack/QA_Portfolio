@@ -32,7 +32,67 @@ Test documentation, reporting, and execution were carried out using the listed Q
 - Functional and API testing (manual and automated)  
 - Data validation using SQL  
 - Documentation and collaboration through Confluence  
-- Version control and workflow management via Git & Azure DevOps  
+- Version control and workflow management via Git & Azure DevOps
+
+ ##🧩 API Testing (Postman)
+
+This section demonstrates hands-on API testing using Postman and the public API ReqRes (https://reqres.in
+).
+The goal was to validate the functionality of the POST /api/users endpoint and confirm data persistence through automated scripts.
+
+Test Objective:
+Validate that new users can be created successfully via the API and verify the correctness of the response data.
+
+Request:
+
+POST https://reqres.in/api/users
+Content-Type: application/json
+
+{
+  "name": "Diogo",
+  "job": "QA Tester"
+}
+
+
+Expected Response:
+
+{
+  "name": "Diogo",
+  "job": "QA Tester",
+  "id": "random",
+  "createdAt": "2025-11-07T..."
+}
+
+
+Validation Criteria:
+
+✅ Status code 201 Created
+
+✅ Response contains id and createdAt fields
+
+✅ Response body echoes name and job
+
+✅ Response time < 1000ms
+
+Postman Test Script:
+
+pm.test("Status code is 201", function () {
+    pm.response.to.have.status(201);
+});
+
+pm.test("Response includes required fields", function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property("id");
+    pm.expect(jsonData).to.have.property("createdAt");
+    pm.expect(jsonData.name).to.eql("Diogo");
+    pm.expect(jsonData.job).to.eql("QA Tester");
+});
+
+
+Result:
+All tests passed successfully ✅
+Response time: 217ms
+Environment: Postman Web + Cloud Agent
 
 ## 📫 Contact
 📧 diogo.antequera@email.com  
