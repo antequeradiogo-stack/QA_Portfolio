@@ -68,9 +68,9 @@ Validation Criteria:
 
 ✅ Status code 201 Created
 
-✅ Response contains id and createdAt fields
+✅ Response contains 'id' and 'createdAt' fields
 
-✅ Response body echoes name and job
+✅ Response body echoes (name, job)
 
 ✅ Response time < 1000ms
 
@@ -97,6 +97,7 @@ Environment: Postman Web + Cloud Agent
 ## Contact
 📧 diogo.antequera@email.com  
 🔗 [LinkedIn](https://linkedin.com/in/diogoantequera)
+💻 GitHub
 
 ---
 
