@@ -112,6 +112,7 @@ Environment: Postman Web + Cloud Agent
 ## Contact
 📧 diogo.antequera@email.com  
 🔗 [LinkedIn](https://linkedin.com/in/diogoantequera)
+
 💻 GitHub
 
 ---
