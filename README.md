@@ -1,9 +1,9 @@
 # QA_Portfolio
-# 🧪 QA Tester Portfolio – Diogo Antequera
+# QA Tester Portfolio – Diogo Antequera
 
 This repository showcases my practical skills as a **Quality Assurance Tester**, covering the complete QA lifecycle — from test planning and design to execution, bug reporting, and API validation.
 
-## 📁 Project Structure
+## Project Structure
 - **Test_Plan.docx:** Detailed test plan including scope, strategy, environment, and tools  
 - **Web_Test_Cases.xlsx:** Functional and regression test cases for web application testing  
 - **Bug_Reports.pdf:** Examples of documented bugs with detailed reproduction steps and evidence  
@@ -11,7 +11,7 @@ This repository showcases my practical skills as a **Quality Assurance Tester**,
 - **SQL_Test_Queries.txt:** Sample SQL queries for data validation  
 - **README.md:** Project overview and documentation
 
-## ⚙️ Tools & Technologies
+## Tools & Technologies
 | Category | Tools |
 |-----------|--------|
 | Test Management | Zephyr, TestRail |
@@ -22,11 +22,11 @@ This repository showcases my practical skills as a **Quality Assurance Tester**,
 | Database | SQL |
 | Business Platform | Salesforce |
 
-## 🧩 Project Context
+## Project Context
 The project simulates QA testing within a **Salesforce Sandbox environment**, involving functional, regression, and API validation processes.  
 Test documentation, reporting, and execution were carried out using the listed QA tools to reflect real-world practices.
 
-## 🧠 Key Skills Demonstrated
+## Key Skills Demonstrated
 - Test planning, design, and execution (aligned with ISTQB standards)  
 - Bug reporting and prioritization using Jira  
 - Functional and API testing (manual and automated)  
@@ -34,7 +34,7 @@ Test documentation, reporting, and execution were carried out using the listed Q
 - Documentation and collaboration through Confluence  
 - Version control and workflow management via Git & Azure DevOps
 
- ## 🧩 API Testing (Postman)
+ ## API Testing (Postman)
 
 This section demonstrates hands-on API testing using Postman and the public API ReqRes (https://reqres.in
 ).
@@ -94,7 +94,7 @@ All tests passed successfully ✅
 Response time: 217ms
 Environment: Postman Web + Cloud Agent
 
-## 📫 Contact
+## Contact
 📧 diogo.antequera@email.com  
 🔗 [LinkedIn](https://linkedin.com/in/diogoantequera)
 
