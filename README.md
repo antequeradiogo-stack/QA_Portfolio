@@ -22,7 +22,7 @@ This repository showcases my practical skills as a **Quality Assurance Tester**,
 | Database | SQL |
 | Business Platform | Salesforce |
 
-## 🧩 Project Context
+##🧩 Project Context
 The project simulates QA testing within a **Salesforce Sandbox environment**, involving functional, regression, and API validation processes.  
 Test documentation, reporting, and execution were carried out using the listed QA tools to reflect real-world practices.
 
