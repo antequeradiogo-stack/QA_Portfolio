@@ -1,8 +1,8 @@
-SQL Data Validation Project – Northwind Database
+## SQL Data Validation Project – Northwind Database
 
 By Diogo Antequera (ISTQB-Certified QA Tester)
 
- Project Overview
+ ## Project Overview
 
 This project validates data integrity, referential consistency, and business rule enforcement in the Northwind demo database using SQL.
 The objective is to ensure that relationships between tables are correct, required fields contain valid data, and no corrupted or orphaned records exist.
@@ -11,7 +11,7 @@ This work reflects real-world backend QA testing, where data validation is essen
 
 ⸻
 
-Objectives
+## Objectives
 	•	Validate customer, order, product, employee, and category consistency
 	•	Ensure referential integrity between related tables
 	•	Detect invalid, missing, or logically incorrect values
@@ -20,7 +20,7 @@ Objectives
 
 ⸻
 
-Scope of Testing
+## Scope of Testing
 	•	Customer data validation
 	•	Order & Order Details consistency
 	•	Product–Category relationships
@@ -30,7 +30,7 @@ Scope of Testing
 
 ⸻
 
- Business Rules Validated
+## Business Rules Validated
 	1.	Every order must belong to an existing customer
 	2.	Every order must be handled by an existing employee
 	3.	Discontinued products must not appear in new orders
@@ -49,7 +49,7 @@ Scope of Testing
 
 ⸻
 
-Test Artifacts Included
+## Test Artifacts Included
 
 This project includes:
 	•	✔️ 15 detailed SQL Test Cases
@@ -60,21 +60,21 @@ This project includes:
 
 ⸻
 
-Tools Used
+## Tools Used
 	•	W3Schools SQL Tryit Editor (query execution)
 	•	Google Sheets (documentation)
 	•	SQL Validation Techniques (manual backend QA)
 
 ⸻
 
-Files in This Folder
+## Files in This Folder
 	•	SQL_Data_Validation_Project_Northwind.xlsx – Full test case suite
 	•	README.md – Project documentation
 	•	Any exported PDFs (if added later)
 
 ⸻
 
-What This Project Demonstrates
+## What This Project Demonstrates
 	•	Strong understanding of backend testing
 	•	Ability to identify data anomalies, logic errors, and referential inconsistencies
 	•	Practical SQL query-writing skills
