@@ -1,6 +1,6 @@
 ## Petstore API Testing Project – Manual & Automated API Validation
 
-By Diogo Antequera (ISTQB-Certified QA Tester)
+Diogo Antequera (ISTQB-Certified QA Tester)
 
 Tools: Postman, Postman Scripts (JS), JSON Schema Validation, Google Sheets
 Test Type: Functional API Testing • Positive & Negative Testing • CRUD Validation
@@ -66,6 +66,7 @@ This work simulates a real QA workflow used in professional environments, includ
 	•	Notes for real-world documentation behavior
 
 📁 Petstore_API_Test_Cases.xlsx
+
 📁 Petstore_API_Test_Cases.pdf
 
 ⸻
