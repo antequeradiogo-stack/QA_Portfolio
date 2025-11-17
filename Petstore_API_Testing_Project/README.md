@@ -58,7 +58,7 @@ This work simulates a real QA workflow used in professional environments, includ
 
 ## Deliverables Included
 
-  1️. API Test Cases (Google Sheets / PDF / Excel)
+# API Test Cases (Google Sheets / PDF / Excel)
   
 	•	15 fully detailed test cases
 	•	Endpoint, method, request body, expected & actual results
@@ -70,7 +70,7 @@ This work simulates a real QA workflow used in professional environments, includ
 
 ⸻
 
-2. Postman Collection (Optional in future update)
+# Postman Collection (Optional in future update)
 
 If you want, we can add a Postman collection export:
 
