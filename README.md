@@ -120,8 +120,7 @@ Environment: Postman Web + Cloud Agent
 
 
 ## Contact
-📧 diogo.antequera@email.com  
-🔗 [LinkedIn](https://linkedin.com/in/diogoantequera)
+📧 antequeradiogo@gmail.com  
 ---
 > This portfolio was created to demonstrate practical QA competencies across multiple tools and methodologies, combining manual testing, API testing, and documentation within a professional workflow.
 

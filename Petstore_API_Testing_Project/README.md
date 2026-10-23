@@ -73,14 +73,10 @@ This work simulates a real QA workflow used in professional environments, includ
 
 # Postman Collection (Optional in future update)
 
-If you want, we can add a Postman collection export:
-
 ✔ Automated scripts
 ✔ Assertions (Status, JSON validation, headers, schema)
 ✔ Data-driven tests
 ✔ Environment variables
-
-(I can create the full automated Postman collection for you.)
 
 ⸻
 
